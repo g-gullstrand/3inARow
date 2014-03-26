@@ -179,12 +179,13 @@ function checkWon() {
 				
 				for ( i = 0; i < 32; i++) {
 					tiles[i].animate(slideOut);
-					//gameView.remove(tiles[i]);
+					
+				}	
+				
 					firstRowClickCount = 0;
 					secondRowClickCount = 0;
 					thirdRowClickCount = 0;
 					fourthRowClickCount = 0;
-				}	
 				
 			}
 		});
@@ -210,8 +211,11 @@ function checkWon() {
 					boardTiles[i].backgroundColor = tileColor;
 				}	
 				
+				for ( i = 0; i < 32; i++) {
+					tiles[i].animate(slideOut);
+					
+				}	
 				
-				setTilesStartPosition();
 				firstRowClickCount = 0;
 				secondRowClickCount = 0;
 				thirdRowClickCount = 0;
